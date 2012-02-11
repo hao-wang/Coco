@@ -40,10 +40,3 @@ GenIDL.f90¸ù¾Ý²ÎÊýºÍËùÑ¡¹Û²âµÄÇé¿öÉú³ÉÒ»¸öIDLÎÄ¼þ£¬ÔÚ¸ÃÎÄ¼þ¿ªÊ¼ÉèÖÃÒ»ÏÂÄ¿Â¼Ö®ºó£
 	±àÒëÎÄ¼þ£¬Èç£»
 	ÔËÐÐLCDM_mcmc, x;(xÎª0»òÕß1£¬¼û.proÎÄ¼þ¿ªÍ·µÄ×¢ÊÍ)£»
 3)µÃµ½contourÍ¼(LCDMSN_mc.ps, LCDMHz_mc.ps...)¡£	
-
-p.s.ËµÃ÷£º
-Coco»¹ÓÐÐ©²»×ã£¬±ÈÈç¾¡¹Ü»¨ÁË²»ÉÙÊ±¼ä£¬ÏÖÔÚ»­³öÀ´µÄÍ¼ÈÔÈ»Ëµ²»ÉÏºÃ¿´£»µ«Ó¦¸ÃËµµ÷½Ú»­Í¼Ð§¹ûÔÚidlÖÐ¿ÉÒÔ±È½Ï·½±ãµØÍê³É¡£Èç¹ûÄãµ÷ÕûÖ®ºó»­³öÀ´µÄÍ¼ºÜÆ¯ÁÁ£¬±ðÍüÁË¸æËßÎÒ¡£ÁíÍâ£¬Èç·¢ÏÖÈÎºÎ´íÎó£¬»òÔËÐÐÖÐ³öÏÖÆæ¹ÖÎÊÌâ£¬Çë¹û¶Ï·¢¶ÌÐÅ¸øÎÒ£¬»òÕß·¢ÓÊ¼þµ½ÎÒµÄÓÊÏäseflyer@gmail.com¡£
-
-°æ±¾ÀúÊ·:
-1.0.6 È¥µôÁËSettings.f90ÖÐµÄfitOk±äÁ¿£»Ê¹ÓÃÊ±ÊÖ¶¯ÎªËùÓÃÄ£ÐÍÉèÖÃOmega_kµÄËã·¨£»
-		
