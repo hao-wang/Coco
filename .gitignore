@@ -15,6 +15,9 @@ coco
 *.txt
 !Readme.txt
 
+#all figures
+*.ps
+
 #some folders
 #chains/
 #colormaps/
