@@ -18,10 +18,10 @@ GenIDL.f90¸ù¾Ý²ÎÊýºÍËùÑ¡¹Û²âµÄÇé¿öÉú³ÉÒ»¸öIDLÎÄ¼þ£¬ÔÚ¸ÃÎÄ¼þ¿ªÊ¼ÉèÖÃÒ»ÏÂÄ¿Â¼Ö®ºó£
 ÈçºÎÊ¹ÓÃ£º
 0 ³ÌÐò×Ô¶¯Éú³ÉIDL»­Í¼³ÌÐò£¬Èç¹ûÒªÀûÓÃÕâÒ»µã£¬¾ÍÐèÒª°²×°IDL.ÎÒÓÃµÄÊÇIDL 7.1¡£´ËÍâÐèÒªÏÂÔØÁ½¸öIDL³ÌÐò¿â£¬textoidlÒÔ¼°Coyote(http://www.ast.cam.ac.uk/~vasily/idl.htm)£»½«ËûÃÇËùÔÚµÄÎ»ÖÃÌí¼ÓÖÁIDLÂ·¾¶¡£
 1-Windows
-1)ÓÃcompaq visual fortran´ò¿ªCoco.dswÎÄ¼þ(intel visual fortranÃ»ÓÃ¹ý£¬²»ÖªµÀÔõÃ´Ñù)£»
-	±à¼­Coco.f90ÎÄ¼þ£¬Ñ¡ÔñÊÇ·ñÊ¹ÓÃmcmc·½·¨£»
-	±à¼­ReadInData.f90ÎÄ¼þ£¬Ìí¼ÓÊý¾Ý»òÕß×¢ÊÍµô²»ÏëÒªµÄÊý¾Ý(ÔÚReadInObsDataº¯ÊýÖÐ½øÐÐ£¬±ÈÈç£¬²»Ê¹ÓÃsnÔñ×¢ÊÍµô'call read_sn')£»
-	±à¼­Settings.f90ÎÄ¼þ£¬ÉèÖÃÄ£ÐÍºÍ²ÎÊý£¬Äã¿ÉÄÜÐèÒª»¨Ð©Ê±¼ä¶ÁÒ»ÏÂÕâ¸öÎÄ¼þ£¬Ëü¼¯ÖÐÁË¼¸ºõËùÓÐÐèÒªÉèÖÃµÄ±äÁ¿£»
+1)ÓÃcompaq visual fortran´ò¿ªcoco.dswÎÄ¼þ(intel visual fortranÃ»ÓÃ¹ý£¬²»ÖªµÀÔõÃ´Ñù)£»
+	±à¼­coco.f90ÎÄ¼þ£¬Ñ¡ÔñÊÇ·ñÊ¹ÓÃmcmc·½·¨£»
+	±à¼­readdata.f90ÎÄ¼þ£¬Ìí¼ÓÊý¾Ý»òÕß×¢ÊÍµô²»ÏëÒªµÄÊý¾Ý(ÔÚReadInObsDataº¯ÊýÖÐ½øÐÐ£¬±ÈÈç£¬²»Ê¹ÓÃsnÔñ×¢ÊÍµô'call read_sn')£»
+	±à¼­settings.f90ÎÄ¼þ£¬ÉèÖÃÄ£ÐÍºÍ²ÎÊý£¬Äã¿ÉÄÜÐèÒª»¨Ð©Ê±¼ä¶ÁÒ»ÏÂÕâ¸öÎÄ¼þ£¬Ëü¼¯ÖÐÁË¼¸ºõËùÓÐÐèÒªÉèÖÃµÄ±äÁ¿£»
 	ÉèÖÃio.f90ÎÄ¼þÖÐµÄplotdir£¬¼´Éú³ÉµÄÊý¾ÝºÍidl×÷Í¼³ÌÐò·ÅÔÚÄÄÀï£¬±ÈÈçplotdir='D:\'£¬²»¸ÄµÄ»°¾ÍÊÇÉú³ÉÔÚcocoÎÄ¼þ¼Ð£»
 	±àÒë£¬ÔËÐÐ£»
 2)ÓÃidl´ò¿ªÉú³ÉµÄ.proÎÄ¼þ£¬ÈçLCDM_mcmc.pro£»
@@ -29,12 +29,13 @@ GenIDL.f90¸ù¾Ý²ÎÊýºÍËùÑ¡¹Û²âµÄÇé¿öÉú³ÉÒ»¸öIDLÎÄ¼þ£¬ÔÚ¸ÃÎÄ¼þ¿ªÊ¼ÉèÖÃÒ»ÏÂÄ¿Â¼Ö®ºó£
 	±àÒë¸ÃÎÄ¼þ£»
 	ÔÚ¡®ÃüÁîÐÐ'ÖÐÔËÐÐLCDM_mcmc, x;(xÎª0»òÕß1£¬¼û.proÎÄ¼þ¿ªÍ·µÄ×¢ÊÍ)£»
 3)µÃµ½contourÍ¼(LCDMSN_mc.ps, LCDMHz_mc.ps...)¡£	
+NOTE: since Mar 2012, the project file(coco.dsp, coco.dsw) will no longer be given. You can still run coco using CVF: adding all coco .f90 files to a blank project and compiling coco.f90, you will get coco.dsp and coco.dsw!
 
 2-Linux
 1)½øÈëcocoÄ¿Â¼£»
-	±à¼­Coco.f90ÎÄ¼þ£¬Ñ¡ÔñÊÇ·ñÊ¹ÓÃmcmc·½·¨£»	
-	±à¼­ReadInData.f90ÎÄ¼þ£¬Ìí¼ÓÊý¾Ý»òÕß×¢ÊÍµô²»ÏëÒªµÄÊý¾Ý(ÔÚReadInObsDataº¯ÊýÖÐ½øÐÐ£¬±ÈÈç£¬²»Ê¹ÓÃsnÔñ×¢ÊÍµô'call read_sn')£»
-	±à¼­Settings.f90ÎÄ¼þ£¬ÉèÖÃÄ£ÐÍºÍ²ÎÊý£¬Äã¿ÉÄÜÐèÒª»¨Ð©Ê±¼ä¶ÁÒ»ÏÂÕâ¸öÎÄ¼þ£¬Ëü¼¯ÖÐÁË¼¸ºõËùÓÐÐèÒªÉèÖÃµÄ±äÁ¿£»
+	±à¼­coco.f90ÎÄ¼þ£¬Ñ¡ÔñÊÇ·ñÊ¹ÓÃmcmc·½·¨£»	
+	±à¼­readdata.f90ÎÄ¼þ£¬Ìí¼ÓÊý¾Ý»òÕß×¢ÊÍµô²»ÏëÒªµÄÊý¾Ý(ÔÚReadInObsDataº¯ÊýÖÐ½øÐÐ£¬±ÈÈç£¬²»Ê¹ÓÃsnÔñ×¢ÊÍµô'call read_sn')£»
+	±à¼­settings.f90ÎÄ¼þ£¬ÉèÖÃÄ£ÐÍºÍ²ÎÊý£¬Äã¿ÉÄÜÐèÒª»¨Ð©Ê±¼ä¶ÁÒ»ÏÂÕâ¸öÎÄ¼þ£¬Ëü¼¯ÖÐÁË¼¸ºõËùÓÐÐèÒªÉèÖÃµÄ±äÁ¿£»
 	ÉèÖÃio.f90ÎÄ¼þÖÐµÄplotdir£¬±ÈÈçplotdir='./plot/'(ÐèÒªÏÈ½¨Á¢Ò»¸öplotÎÄ¼þ¼Ð)£¬²»¸ÄµÄ»°¾ÍÊÇÉú³ÉÔÚcocoÎÄ¼þ¼Ð£»
 	make£»
 2)ÔÚÉú³ÉµÄ.proÎÄ¼þ£¨ÈçLCDM_mcmc.pro£©ËùÔÚÄ¿Â¼ÏÂ¿ªÆôidl£»
