@@ -23,3 +23,16 @@ h       |n=   20|from      0.50000  |to      0.88000
 wb      |n=   20|from      0.00500  |to      0.10000
  Succeed! Time Elapse:     11.783208999999999      s
   ------------------------------------------------
+2012/ 3/ 8/ 0: 3:11
+ CoCo Version 1.0.4--------------------------
+ ---The data sets used--- :
+        SN    with  557data poi
+ Use Normal(Grid Evaluation) Method
+ ---Param Set---: 
+ LCDMnonflat
+Om      |n=   30|from      0.05000  |to      1.20000
+Ol      |n=   25|from      0.00000  |to      1.20000
+h       |n=   20|from      0.50000  |to      0.88000
+wb      |n=   20|from      0.00500  |to      0.10000
+ Succeed! Time Elapse:     1177.0310640000000      s
+  ------------------------------------------------
