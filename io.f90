@@ -6,8 +6,8 @@ Module IO
 	
 	integer , parameter :: use_multi=1 !If you want to plot in a 'SN', 'SN+Hz', 'SN+Hz+..' way
 	character(len=mtxt), parameter:: version='CoCo Version 1.0.4' !to keep track with modification	
-	character(len=mtxt), parameter:: datadir='./Data/'  !the observational data(SN, Hz,...) that you use
-!	character(len=mtxt), parameter:: datadir='Data\'
+	character(len=mtxt), parameter:: datadir='./data/'  !the observational data(SN, Hz,...) that you use
+!	character(len=mtxt), parameter:: datadir='data\'
 	character(len=mtxt), parameter:: plotdir=''  
 	character(len=mtxt), parameter:: logdir=''
 	real(hp) :: time_begin, time_end
@@ -19,7 +19,7 @@ Module IO
 	character(len=mtxt), parameter :: IDLMCMCfile='_mcmc'
 	character(len=mtxt), parameter :: LOGfile='info.txt'
 
-	!set up the ps file coordinates(used in GenIDL.f90)
+	!set up the ps file coordinates(used in genidl.f90)
 	real(hp), parameter	:: cxori=0.10, cyori=0.10, cxend=0.95, cyend=0.90, charsize=0.4, num_color=200
 	!set up the legend position
 	real(hp), parameter  :: lxori=0.75, lyori=0.95

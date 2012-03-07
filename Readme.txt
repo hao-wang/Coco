@@ -4,7 +4,7 @@ CocoµÄÌØµã£º
 ½á¹¹×ÔÈ»£¬ºÜÈÝÒ×¶Á¶®£»
 Ìí¼Ó²ÎÊýºÍ¹Û²âÊý¾Ý¼òµ¥£»
 ¿ÉÒÔ×Ô¶¯Éú³É»­Í¼³ÌÐò£¨IDLÎÄ¼þ£©;
-ÔÚlinuxºÍwindowsÏÂ¶¼¿ÉÒÔ·½±ãµØÔËÐÐ;
+ÔÚLinuxºÍWindowsÏÂ¶¼¿ÉÒÔ·½±ãµØÔËÐÐ;
 Ã¿´ÎÔËÐÐµÄÊ±¼ä£¬ÔËÐÐÊ±Ëù²ÉÓÃµÄÄ£ÐÍºÍ²ÎÊýÉèÖÃÇé¿ö£¬¶¼±£´æÔÚÃûÎªinfo.txtµÄÎÄ¼þÖÐ£»
 
 Ö÷Òª³ÌÐòÎÄ¼þ½éÉÜ£º
@@ -16,7 +16,8 @@ ParamScan.f90ÊÓuse_MCMCµÄÈ¡Öµ½øÐÐÖð¸ñµãÉ¨Ãè²ÎÊý¿Õ¼ä£¬»òÕßÒÔËæ»ú·½Ê½ÔÚ²ÎÊý¿Õ¼äÐÐ×
 GenIDL.f90¸ù¾Ý²ÎÊýºÍËùÑ¡¹Û²âµÄÇé¿öÉú³ÉÒ»¸öIDLÎÄ¼þ£¬ÔÚ¸ÃÎÄ¼þ¿ªÊ¼ÉèÖÃÒ»ÏÂÄ¿Â¼Ö®ºó£¬Ö±½ÓÔËÐÐ¼´¿ÉµÃµ½Ò»¸öÃèÊö¶Ô¸÷²ÎÊýÏÞÖÆµÄpsÎÄ¼þ£»
 
 ÈçºÎÊ¹ÓÃ£º
-1-Windows(ÐèÒª°²×°IDL,ÎÒÓÃµÄÊÇ7.1°æ±¾)£º
+0 ³ÌÐò×Ô¶¯Éú³ÉIDL»­Í¼³ÌÐò£¬Èç¹ûÒªÀûÓÃÕâÒ»µã£¬¾ÍÐèÒª°²×°IDL.ÎÒÓÃµÄÊÇIDL 7.1¡£´ËÍâÐèÒªÏÂÔØÁ½¸öIDL³ÌÐò¿â£¬textoidlÒÔ¼°Coyote(http://www.ast.cam.ac.uk/~vasily/idl.htm)£»½«ËûÃÇËùÔÚµÄÎ»ÖÃÌí¼ÓÖÁIDLÂ·¾¶¡£
+1-Windows
 1)ÓÃcompaq visual fortran´ò¿ªCoco.dswÎÄ¼þ(intel visual fortranÃ»ÓÃ¹ý£¬²»ÖªµÀÔõÃ´Ñù)£»
 	±à¼­Coco.f90ÎÄ¼þ£¬Ñ¡ÔñÊÇ·ñÊ¹ÓÃmcmc·½·¨£»
 	±à¼­ReadInData.f90ÎÄ¼þ£¬Ìí¼ÓÊý¾Ý»òÕß×¢ÊÍµô²»ÏëÒªµÄÊý¾Ý(ÔÚReadInObsDataº¯ÊýÖÐ½øÐÐ£¬±ÈÈç£¬²»Ê¹ÓÃsnÔñ×¢ÊÍµô'call read_sn')£»
@@ -29,7 +30,7 @@ GenIDL.f90¸ù¾Ý²ÎÊýºÍËùÑ¡¹Û²âµÄÇé¿öÉú³ÉÒ»¸öIDLÎÄ¼þ£¬ÔÚ¸ÃÎÄ¼þ¿ªÊ¼ÉèÖÃÒ»ÏÂÄ¿Â¼Ö®ºó£
 	ÔÚ¡®ÃüÁîÐÐ'ÖÐÔËÐÐLCDM_mcmc, x;(xÎª0»òÕß1£¬¼û.proÎÄ¼þ¿ªÍ·µÄ×¢ÊÍ)£»
 3)µÃµ½contourÍ¼(LCDMSN_mc.ps, LCDMHz_mc.ps...)¡£	
 
-2-Linux(ÐèÒª°²×°IDL£¬ÎÒÓÃµÄÊÇ7.1°æ±¾)£º
+2-Linux
 1)½øÈëcocoÄ¿Â¼£»
 	±à¼­Coco.f90ÎÄ¼þ£¬Ñ¡ÔñÊÇ·ñÊ¹ÓÃmcmc·½·¨£»	
 	±à¼­ReadInData.f90ÎÄ¼þ£¬Ìí¼ÓÊý¾Ý»òÕß×¢ÊÍµô²»ÏëÒªµÄÊý¾Ý(ÔÚReadInObsDataº¯ÊýÖÐ½øÐÐ£¬±ÈÈç£¬²»Ê¹ÓÃsnÔñ×¢ÊÍµô'call read_sn')£»

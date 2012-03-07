@@ -2,19 +2,19 @@
 F90C=gfortran
 FFLAGS = -openmp -O3 -w -fpp2 -DMPI
 LINKFLAGS = -lm
-SOURCES = Settings.f90 \
-					ParamScan.f90 \
-					Constants.f90 \
-					GenIDL.f90 \
-					Subroutines.f90 \
-					ReadInData.f90 \
+SOURCES = settings.f90 \
+					paramscan.f90 \
+					constants.f90 \
+					genidl.f90 \
+					subroutines.f90 \
+					readdata.f90 \
 					propose.f90 \
-					Coco.f90 \
-					Chi2.f90 \
-					RandGen.f90\
-					MathTool.f90\
+					coco.f90 \
+					chi2.f90 \
+					randgen.f90\
+					mathtool.f90\
 					io.f90\
-					MCMC.f90
+					mcmc.f90
 					
 OBJS = ${SOURCES:.f90=.o}					
 
@@ -23,16 +23,16 @@ all : coco
 coco : ${OBJS}
 	${F90C} -o coco $(OBJS) ${LINKFLAGS}
 	
-Coco.o : io.o Settings.o Subroutines.o ParamScan.o GenIDL.o
-Chi2.o : Subroutines.o ReadInData.o Settings.o io.o
-ParamScan.o : Chi2.o Constants.o Settings.o RandGen.o ReadInData.o MCMC.o
-GenIDL.o : Settings.o ReadInData.o Constants.o io.o
-MCMC.o : Chi2.o Settings.o propose.o Constants.o io.o RandGen.o
-propose.o : Settings.o RandGen.o
-ReadInData.o : Constants.o Settings.o io.o
-io.o : Constants.o
-Settings.o : Constants.o MathTool.o
-Subroutines.o : ReadInData.o Settings.o Constants.o
+coco.o : io.o settings.o subroutines.o paramscan.o genidl.o
+chi2.o : subroutines.o readdata.o settings.o io.o
+paramscan.o : chi2.o constants.o settings.o randgen.o readdata.o mcmc.o
+genidl.o : settings.o readdata.o constants.o io.o
+mcmc.o : chi2.o settings.o propose.o constants.o io.o randgen.o
+propose.o : settings.o randgen.o
+readdata.o : constants.o settings.o io.o
+io.o : constants.o
+settings.o : constants.o mathtool.o
+subroutines.o : readdata.o settings.o constants.o
 
 %.o: %.f90
 	${F90C} -c $*.f90		

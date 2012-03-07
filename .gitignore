@@ -1,0 +1,23 @@
+#ignored files
+coco
+#all .html files
+*.html
+#except readme.html
+#!readme.html
+
+#all lib and object files
+*.[ao]
+*.mod
+#all text files, data files
+*.dat
+*.pro
+
+*.txt
+!Readme.txt
+
+#some folders
+#chains/
+#colormaps/
+#data/
+#mscripts/
+#plot_data/
