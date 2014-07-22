@@ -12,7 +12,7 @@ coco
 *.dat
 *.pro
 
-!*.txt
+*.txt
 !Readme.txt
 
 #all figures
