@@ -7,7 +7,7 @@ Features:
 - Running info (parameters, Grid/MCMC, running time, etc) is logged properly.
 
 Files you may want to modify:
-- coco.f90: main file; use_MCMC = 1 if using MCMC, 0 otherwise;
+- coco.f90: main file; `use_MCMC = 1` if using MCMC, 0 otherwise;
 - settings.f90: setting parameters and everything about your dark energy model; 
 - readdata.f90: add or comment out an observation data, e.g., in the case that supernovae is not needed, it will be sufficient to just comment out the line 'call read_sn'in 'subroutine ReadInObsData';
 - genidl.f90: generate IDL .pro file; the corresponding IDL program has an parameter(0 or 1). Read the comments inside the .pro file before running. 
@@ -18,7 +18,7 @@ Notes:
 
 A sketch of the workflow with coco:
 1. cd into coco:
-	1. Edit coco.f90£¬that is, set the value of use_MCMC;	
+	1. Edit coco.f90, that is, set the value of `use_MCMC`;	
 	1. Edit readdata.f90, add data set or comment out some data;
 	1. Edit io.f90, set desired plotdir;
 	1. Edit settings.f90£¬set the model and its parameters. You might need to read carefully of this file: I tried my best to put everything that does not need to be changed out of this file;
